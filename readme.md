@@ -12,15 +12,17 @@ It works by applying the image as a background image in unsupported browsers to 
 
 `forFitSake` has only two configuration options:
 
-- `class` _[default: `hasForFitSake`]_ - the class applied to the element if it does not support `object-fit` (without the `.`)
-- `includeDetection` _[default: `true`]_ - whether to include the Modernizr detection (only set to false if you have already included Modernizr)
+| Parameter          | Default           | Description                                                                                           |
+|--------------------|-------------------|-------------------------------------------------------------------------------------------------------|
+| `class`            | `'hasForFitSake'` | The class applied to the element if it does not support `object-fit` (without the `.`)                |
+| `includeDetection` | `true`            | Whether to include the Modernizr detection (only set to false if you have already included Modernizr) |
 
 e.g.
 
 ```
 $('div').forFitSake({
-			class: 'hasForFitSake',
-			includeDetection: true
+	class: 'hasForFitSake',
+	includeDetection: true
 });
 ```
 
