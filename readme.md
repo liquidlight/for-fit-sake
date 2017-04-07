@@ -43,3 +43,8 @@ JS:
 ```
 $('.parent').forFitSake();
 ```
+
+### Todo
+
+- Document parameters
+- Fully test on more than one site
