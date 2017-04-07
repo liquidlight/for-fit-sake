@@ -8,6 +8,22 @@ The plugin will only currently `object-fit` images (we've yet to encounter a use
 
 It works by applying the image as a background image in unsupported browsers to it's parent so you can use `background-size`. 
 
+### Configuration
+
+`forFitSake` has only two configuration options:
+
+- `class` _[default: `hasForFitSake`]_ - the class applied to the element if it does not support `object-fit` (without the `.`)
+- `includeDetection` _[default: `true`]_ - whether to include the Modernizr detection (only set to false if you have already included Modernizr)
+
+e.g.
+
+```
+$('div').forFitSake({
+			class: 'hasForFitSake',
+			includeDetection: true
+});
+```
+
 ### Example
 
 HTML:
@@ -46,5 +62,4 @@ $('.parent').forFitSake();
 
 ### Todo
 
-- Document parameters
 - Fully test on more than one site
