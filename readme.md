@@ -42,8 +42,8 @@ CSS:
 .parent {
 	width: 12rem;
 	height: 12rem;
+	background: center no-repeat;
 	background-size: cover; /* Should match the object-fit prop */
-	background-position: center;
 }
 .parent img {
 	display: block;
@@ -52,16 +52,14 @@ CSS:
 	object-fit: cover;
 }
 .hasForFitSake img {
-	display: none;
+	visibility: hidden;
 }
 ```
 
 JS:
 
+_The selector is the parent containing the image_
+
 ```
 $('.parent').forFitSake();
 ```
-
-### Todo
-
-- Fully test on more than one site
