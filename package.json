@@ -1,0 +1,23 @@
+{
+  "name": "@liquidlight/for-fit-sake",
+  "version": "0.2.0",
+  "description": "A jQuery object-fit polyfill for Internet Explorer and Edge",
+  "main": "dist/forfitsake.min.js",
+  "scripts": {
+    "dist": "uglifyjs src/forfitsake.js --comments '/^\/*!/' --compress --mangle -o dist/forfitsake.min.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liquidlight/for-fit-sake.git"
+  },
+  "keywords": [
+    "jquery",
+    "object-fit"
+  ],
+  "author": "Mike Street",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/liquidlight/for-fit-sake/issues"
+  },
+  "homepage": "https://github.com/liquidlight/for-fit-sake#readme"
+}
