@@ -1,6 +1,6 @@
 {
   "name": "@liquidlight/for-fit-sake",
-  "version": "0.2.0",
+  "version": "1.0.0",
   "description": "A jQuery object-fit polyfill for Internet Explorer and Edge",
   "main": "dist/forfitsake.min.js",
   "scripts": {
