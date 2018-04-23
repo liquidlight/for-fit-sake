@@ -4,7 +4,7 @@
  * @author Mike Street
  * @copyright Liquid Light
  * @homepage https://github.com/liquidlight/for-fit-sake
- * @version 0.2.0
+ * @version 1.0.0
  * @summary Object fit fallback library
  */
 (function($){
