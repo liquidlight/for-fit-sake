@@ -16,13 +16,15 @@ It works by applying the image as a background image in unsupported browsers to 
 |--------------------|-------------------|-------------------------------------------------------------------------------------------------------|
 | `class`            | `'hasForFitSake'` | The class applied to the element if it does not support `object-fit` (without the `.`)                |
 | `includeDetection` | `true`            | Whether to include the Modernizr detection (only set to false if you have already included Modernizr) |
+| `debug`            | `false`           | Bypass Modernizr and apply the background image no matter what (will console log)                     |
 
 e.g.
 
 ```javascript
 $('div').forFitSake({
 	class: 'hasForFitSake',
-	includeDetection: true
+	includeDetection: true,
+	debug: true
 });
 ```
 
@@ -42,7 +44,7 @@ CSS:
 .parent {
 	width: 12rem;
 	height: 12rem;
-	background: center no-repeat;
+	background-position: center;
 	background-size: cover; /* Should match the object-fit prop */
 }
 .parent img {
