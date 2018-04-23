@@ -1,10 +1,10 @@
-/**
+/*!
  * forFitSake
  *
  * @author Mike Street
  * @copyright Liquid Light
  * @homepage https://github.com/liquidlight/for-fit-sake
- * @version 1.0.0
+ * @version 1.1.0
  * @summary Object fit fallback library
  */
 (function($){
