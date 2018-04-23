@@ -1,10 +1,10 @@
 {
   "name": "@liquidlight/for-fit-sake",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A jQuery object-fit polyfill for Internet Explorer and Edge",
   "main": "dist/forfitsake.min.js",
   "scripts": {
-    "dist": "uglifyjs src/forfitsake.js --comments '/^\/*!/' --compress --mangle -o dist/forfitsake.min.js"
+    "dist": "uglifyjs src/forfitsake.js --comments '/^/*!/' --compress --mangle -o dist/forfitsake.min.js"
   },
   "repository": {
     "type": "git",
