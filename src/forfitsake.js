@@ -10,12 +10,28 @@
 (function($){
 	$.fn.forFitSake = function(options) {
 
-		// Only option is to change the class used
 		var defaults = {
+			// What class gets assigned to the parent
 			class: 'hasForFitSake',
-			includeDetection: true
+
+			// Should the Modernizr detection be included. This is wrapped in
+			// an if statement, so file size does not change based on this
+			// option.
+			includeDetection: true,
+
+			// Should the detection be bypassed? Use this to check on modern
+			// browsers what happens to your code (saves booting up a VM)
+			debug: false
 		};
 		options = $.extend(defaults, options);
+
+		var debug = function(log) {
+			if(options.debug) {
+				console.log(log);
+			}
+		};
+
+		debug('ForFitSake.js - debug mode');
 
 		// Custom & modified Modernizr code for just object-fit
 		if(options.includeDetection) {
@@ -23,25 +39,36 @@
 		}
 
 		// Check if object fit is supported
-		if (!Modernizr.objectfit) {
+		if (!Modernizr.objectfit || options.debug) {
+
 			// Loop through each of the elements initialised
 			$(this).each(function () {
+
 				// Check if the element exits
 				if($(this).length) {
+
 					// Cache some variables
 					var self = $(this),
 						imgUrl = self.find('img').prop('src');
 
-					// If the element passed in is an image itself, target the parent
+
+					// If the element passed in is an image itself, target the
+					// parent instead
 					if(self.is('img')) {
+						debug('Item is image');
+
 						imgUrl = self.prop('src');
 						self = self.parent();
 					}
+					debug(self);
+					debug(imgUrl);
 
 					// Add the image as a background on the parent
 					if (imgUrl) {
-						self.css('backgroundImage', 'url(' + imgUrl + ')')
-							.addClass(options.class);
+						self.css({
+							backgroundImage: 'url(' + imgUrl + ')',
+							backgroundRepeat: 'no-repeat'
+						}).addClass(options.class);
 					}
 				}
 			});
