@@ -1,3 +1,7 @@
+# DEPRECATED
+
+This is no longer supported, please consider using the CSS property [`object-fit`](https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit) instead.
+
 # For Fit Sake
 
 > A jQuery `object-fit` polyfill for Internet Explorer and Edge
