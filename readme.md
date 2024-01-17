@@ -1,3 +1,5 @@
+[![No Maintenance Intended](http://unmaintained.tech/badge.svg)](http://unmaintained.tech/)
+
 # DEPRECATED
 
 This is no longer supported, please consider using the CSS property [`object-fit`](https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit) instead.
